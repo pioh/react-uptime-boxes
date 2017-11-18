@@ -1,0 +1,50 @@
+// Поместите параметры в этот файл, чтобы перезаписать параметры по умолчанию и пользовательские параметры.
+{
+    "editor.tabSize": 2,
+    "editor.rulers": [
+        80
+    ],
+    "editor.formatOnSave": false,
+    "javascript.validate.enable": false,
+    "extensions.autoUpdate": true,
+    "eslint.autoFixOnSave": true,
+    "docker.enableLinting": true,
+    "workbench.iconTheme": null,
+    "tslint.enable": true,
+    "tslint.jsEnable": false,
+    "tslint.autoFixOnSave": true,
+    "typescript.tsdk": "./node_modules/typescript/lib",
+    "css.lint.duplicateProperties": "warning",
+    "css.lint.emptyRules": "warning",
+    "css.lint.importStatement": "warning",
+    "scss.lint.duplicateProperties": "warning",
+    "scss.lint.importStatement": "warning",
+    "scss.lint.boxModel": "ignore",
+    "scss.lint.unknownVendorSpecificProperties": "warning",
+    "css.validate": false,
+    "typescript.check.tscVersion": false,
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact"
+    ],
+    "lcov.path": [
+        "./.coverage/lcov.info"
+    ],
+    "lcov.sourceMaps": true,
+    "lcov.branchCoverage": "full",
+    "jest.enableInlineErrorMessages": false,
+    "coverage-gutters.lcovname": ".coverage/lcov.info",
+    "coverage-gutters.showLineCoverage": true,
+    "coverage-gutters.showRulerCoverage": true,
+    "jest.autoEnable": false,
+    "css.validate": false,
+    "scss.validate": false,
+    "tslint.run": "onType",
+    "tslint.autoFixOnSave": true,
+    "typescript.tsserver.trace": "messages",
+    "editor.minimap.enabled": false,
+    "autoimport.spaceBetweenBraces": false,
+    "emmet.showAbbreviationSuggestions": false,
+    "emmet.showExpandedAbbreviation": "never",
+    "git.ignoreLimitWarning": true
+}

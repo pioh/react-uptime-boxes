@@ -1,0 +1,52 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "baseUrl": "./src",
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "module": "commonjs",
+    // "moduleResolution": "node",
+    "target": "es5",
+    "jsx": "react",
+    "allowJs": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": false,
+    "allowUnreachableCode": false,
+    // "inlineSourceMap":true,
+    // "moduleResolution": "node",
+    "declaration": false,
+    // "declarationDir": "./src",
+    "alwaysStrict":true,
+    "downlevelIteration":true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "strict":true,
+    "strictNullChecks":true,
+    "checkJs": false,
+    "allowSyntheticDefaultImports":false,
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "noImplicitAny": false, // TODO
+    "lib": [
+      // "es2015",
+      "es2016",
+      "es2017",
+      "dom"
+      // "scripthost",
+      // "esnext"
+    ]
+  },
+  "extensions":[".ts",".tsx"],
+  "include": [
+    "./src/**/*.ts",
+    "./src/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    ".test",
+    ".coverage"
+  ]
+}
