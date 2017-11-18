@@ -6,6 +6,9 @@ import {ServerUptime} from './ServerUptime'
 
 type IServers = ObservableMap<ObservableMap<boolean>>
 
+let MAX:any = location.search.match(/max=(\d+)/)
+MAX = MAX && MAX[1] || 364
+
 @observer
 class UptimeBoxes extends React.Component {
   @observable servers: IServers = this.generateServers()
@@ -36,7 +39,7 @@ class UptimeBoxes extends React.Component {
       days = observable.map()
       servers.set(name, days)
     }
-    for (let i=0; i<=364; i++) {
+    for (let i=0; i<=MAX; i++) {
       let up = Math.random() > 0.2;
       days.set(i, up)
     }
