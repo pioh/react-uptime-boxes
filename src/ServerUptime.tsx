@@ -5,6 +5,7 @@ import {observer} from 'mobx-react'
 
 import {ServerUptimeDay} from './ServerUptimeDay'
 
+import * as s from './app.css'
 
 interface IServerUptimeProps {
   name: string,
@@ -15,10 +16,10 @@ interface IServerUptimeProps {
 class ServerUptime extends React.Component<IServerUptimeProps> {
   render () {
     return (
-      <div className='server-uptime'>
+      <div className={s.serverUptime}>
         <h1>{this.props.name}</h1>
         <ServerUptimeStats days={this.props.days} />
-        <div className="days">
+        <div className={s.days}>
           {this.props.days.keys().map(day => 
             <ServerUptimeDay key={day} days={this.props.days} day={day} />
           )}

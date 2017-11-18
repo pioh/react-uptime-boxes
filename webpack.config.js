@@ -58,6 +58,7 @@ module.exports = {
               query  : {
                 modules        : true,
                 sourceMap      : !isProduction,
+                camelCase      : true,
                 importLoaders  : 1,
                 localIdentName : '[local]__[hash:base64:5]',
               },

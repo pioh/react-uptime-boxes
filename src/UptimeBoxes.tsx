@@ -1,7 +1,6 @@
 import * as React from 'react'
 import {observable, action, ObservableMap} from 'mobx'
 import {observer} from 'mobx-react'
-import './app.css'
 
 import {ServerUptime} from './ServerUptime'
 

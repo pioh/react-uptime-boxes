@@ -3,6 +3,7 @@ import * as React from 'react'
 import {ObservableMap, computed} from 'mobx'
 import {observer} from 'mobx-react'
 
+import * as s from './app.css'
 
 interface IServerUptimeDayProps {
   day: string,
@@ -15,7 +16,7 @@ class ServerUptimeDay extends React.Component<IServerUptimeDayProps> {
     return this.props.days.get(this.props.day)
   }
   @computed get className () {
-    return 'uptime-day-status ' + (this.up ? 'day-up' : 'day-down')
+    return s.uptimeDayStatus +' ' + (this.up ? s.dayUp : s.dayDown)
   }
   @computed get title () {
     return this.up ? 'Servers operational!' : 'Red alert!'
@@ -23,9 +24,9 @@ class ServerUptimeDay extends React.Component<IServerUptimeDayProps> {
 
   render () {
     return (
-      <div className='uptime-day'>
+      <div className={s.uptimeDay}>
         <span className={this.className} />
-        <span className='hover'>{this.props.day}: {this.title}</span>
+        <span className={s.hover}>{this.props.day}: {this.title}</span>
       </div>
     )
   }
