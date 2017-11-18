@@ -15,7 +15,7 @@ class ServerUptimeDay extends React.Component<IServerUptimeDayProps> {
   @computed get up () {
     return this.props.days.get(this.props.day)
   }
-  @computed get divStyle () {
+  @computed get inlineStyle () {
     return {
       backgroundColor: (this.up ? '#8cc665' : '#ccc')
     }
@@ -24,13 +24,13 @@ class ServerUptimeDay extends React.Component<IServerUptimeDayProps> {
     return this.up ? 'Servers operational!' : 'Red alert!'
   }
   @computed get className () {
-    return s.uptimeDayStatus;
+    return s.uptimeDayStatus
   }
 
   render () {
     return (
       <div className={s.uptimeDay}>
-        <span className={this.className} style={this.divStyle} />
+        <span className={this.className} style={this.inlineStyle} />
         <span className={s.hover}>{this.props.day}: {this.title}</span>
       </div>
     )
